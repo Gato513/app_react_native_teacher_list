@@ -12,64 +12,73 @@ data = {
             ],
             "descripcion": "Especialista en ciencias exactas con más de 10 años de experiencia en la enseñanza.",
             "contacto": {
-                "correo": "Daniel.Moreno@example.com",
-                "telefono": "+595995371679"
+                "correo": "Daniel.Moreno@example.com", //! Remplazar por email real
+                "telefono": "+595985226582"
             },
             "disponibilidad": "Lunes a Viernes, 10:00 - 14:00"
         },
 
         {
             "id": 2,
-            "nombre": "Sra. María López",
-            "imagenId": "1z1ZFQQYN4n0fV-4PVi3i-Tv71_dYI_qP",
-            "materias": [
-                "Literatura",
-                "Historia",
-                "Arte"
-            ],
-            "descripcion": "Experta en literatura clásica y moderna con un enfoque en la literatura latinoamericana.",
+            "nombre": "Lic. Elva González Segovia",
+            "imagenId": "1QWk17ch82KF_9XXQZj9f5SA93N9I1nPT", //! Remplazar por url real
+            "materias": ["Orientación Educacional y Sociolaboral"],
+            "descripcion": "Especialista en Comunicación con 15 años de experiencia",
             "contacto": {
-                "correo": "maria.lopez@example.com",
-                "telefono": "+0987654321"
+                "correo": "gonzalezelva.1012@gmail.com",
+                "telefono": "+595985728854"
             },
-            "disponibilidad": "Martes y Jueves, 14:00 - 18:00"
+            "disponibilidad": "Miércoles: 14:00 - 17:00"
         },
 
         {
             "id": 3,
-            "nombre": "Ing. Carlos Gómez",
-            "imagenId": "1vIeOQ-NpMKmrioGuzDgY08_fgfvUqo1u",
+            "nombre": "Lic. Ema Carreras",
+            "imagenId": "1Y27E1eGpyRW7XuWr8EBglmcD_O5UuTy-",
             "materias": [
-                "Programación",
-                "Sistemas Operativos",
-                "Redes"
+                "Administración de Negocios",
+                "Contabilidad"
             ],
-            "descripcion": "Ingeniero en sistemas con experiencia en desarrollo de software y redes.",
+            "descripcion": "Especialista en Administración de Negocios con 20 años de experiencia.\nEspecializada en administración de empresas, contabilidad con 50 años de experiencia.",
             "contacto": {
-                "correo": "carlos.gomez@example.com",
-                "telefono": "+1122334455"
+                "correo": "ema.carreras@gmail.com",
+                "telefono": "+595985105095"
             },
-            "disponibilidad": "Lunes, Miércoles y Viernes, 09:00 - 12:00"
+            "disponibilidad": "Lunes a Viernes: 19:00 - 22:00"
         },
 
         {
             "id": 4,
-            "nombre": "Dr. Ana Fernández",
-            "imagenId": "1QWk17ch82KF_9XXQZj9f5SA93N9I1nPT",
+            "nombre": "Prof. Olga Dolotowycz",
+            "imagenId": "15XtDohjvg_h_7fMPasB6uvOWuJtnPCoA",
             "materias": [
-                "Biología",
-                "Ecología",
-                "Genética"
+                "Matemáticas Aplicada a la informatica"
             ],
-            "descripcion": "Investigadora en biología molecular con énfasis en genética y ecología.",
+            "descripcion": "Docente especializado en matemáticas con 6 años de experiencia",
             "contacto": {
-                "correo": "ana.fernandez@example.com",
-                "telefono": "+1223344556"
+                "correo": "Olgade1083@gmail.com",
+                "telefono": "+595975630952"
             },
-            "disponibilidad": "Lunes, Miércoles y Viernes, 11:00 - 15:00"
+            "disponibilidad": "Lunes: 6:00 - 9:00\nViernes: 18:00 - 22:00"
+        },
+
+        {
+            "id": 5,
+            "nombre": "Lic. Carolina Meza",
+            "imagenId": "1z1ZFQQYN4n0fV-4PVi3i-Tv71_dYI_qP",
+            "materias": [
+                "Metodología de la Investigación"
+            ],
+            "descripcion": "Especialista en Metodología de la Investigación con más de 10 años de experiencia.",
+            "contacto": {
+                "correo": "carolinamezagauto@gmail.com",
+                "telefono": "+595972638069"
+            },
+            "disponibilidad": "Lunes a Jueves: 20:30 en adelante\nViernes: 19:30 en adelante\nSábado y Domingo: Horario completo"
         }
     ]
 }
+
 
 exports.getProfesores = (req, res) => {
     res.json(data);
