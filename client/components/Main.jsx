@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import { View, ActivityIndicator, FlatList } from "react-native";
-import { React, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { getProfesorDate } from "../lib/api";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { CardView } from "./CardView";
@@ -19,7 +19,6 @@ export const Main = () => {
 				setDatas(getData);
 				setLoaded(true);
 			}
-
 		} catch (error) {
 			console.error(error);
 		}
@@ -32,10 +31,11 @@ export const Main = () => {
 	return (
 		<View
 			style={{
-				paddingButton: insets.bottom,
+				paddingBottom: insets.bottom,
 				paddingTop: insets.top,
-				paddingLeft: insets.left,
-				paddingRight: insets.right,
+				paddingHorizontal: 15,
+				backgroundColor: "linear-gradient(180deg, #1a1a1a, #333333)", // Degradado de fondo
+				flex: 1, // Asegura que el contenido ocupe todo el espacio disponible
 			}}
 		>
 			{loaded ? (
@@ -43,10 +43,12 @@ export const Main = () => {
 					data={datas.teachersList}
 					keyExtractor={(data) => data.imagenId}
 					renderItem={({ item }) => <CardView item={item} />}
+					contentContainerStyle={{ paddingVertical: 20 }} // Espacio alrededor de los elementos
 				/>
 			) : (
-				<ActivityIndicator size={"extraLarge"} />
+				<ActivityIndicator size="large" color="#fff" style={{ marginTop: 20 }} />
 			)}
 		</View>
 	);
 };
+

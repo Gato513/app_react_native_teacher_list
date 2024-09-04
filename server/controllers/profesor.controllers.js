@@ -79,7 +79,6 @@ data = {
     ]
 }
 
-
 exports.getProfesores = (req, res) => {
     res.json(data);
 }
