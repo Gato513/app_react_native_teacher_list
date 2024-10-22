@@ -41,12 +41,16 @@ export const Main = () => {
 			{loaded ? (
 				<FlatList
 					data={datas.teachersList}
-					keyExtractor={(data) => data.imagenId}
+					keyExtractor={(data) => data.id}
 					renderItem={({ item }) => <CardView item={item} />}
 					contentContainerStyle={{ paddingVertical: 20 }} // Espacio alrededor de los elementos
 				/>
 			) : (
-				<ActivityIndicator size="large" color="#fff" style={{ marginTop: 20 }} />
+				<ActivityIndicator
+					size="large"
+					color="#fff"
+					style={{ marginTop: 20 }}
+				/>
 			)}
 		</View>
 	);

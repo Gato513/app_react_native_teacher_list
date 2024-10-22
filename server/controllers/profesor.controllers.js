@@ -4,7 +4,7 @@ data = {
         {
             "id": 1,
             "nombre": "Daniel Moreno",
-            "imagenId": "1GgFcGWiEqBakiiior22Lf6XNtxFI0PFv",
+            "imagenId": "1u5llF5gF8Gb1dvi1uWWtEaYr8cirYHWY",
             "materias": [
                 "Laboratorio",
                 "software",
@@ -12,7 +12,7 @@ data = {
             ],
             "descripcion": "Especialista en ciencias exactas con más de 10 años de experiencia en la enseñanza.",
             "contacto": {
-                "correo": "Daniel.Moreno@example.com", //! Remplazar por email real
+                "correo": "Daniel.Moreno@example.com",
                 "telefono": "+595985226582"
             },
             "disponibilidad": "Lunes a Viernes, 10:00 - 14:00"
@@ -21,7 +21,7 @@ data = {
         {
             "id": 2,
             "nombre": "Lic. Elva González Segovia",
-            "imagenId": "1QWk17ch82KF_9XXQZj9f5SA93N9I1nPT", //! Remplazar por url real
+            "imagenId": "1u5llF5gF8Gb1dvi1uWWtEaYr8cirYHWY",
             "materias": ["Orientación Educacional y Sociolaboral"],
             "descripcion": "Especialista en Comunicación con 15 años de experiencia",
             "contacto": {
@@ -65,7 +65,7 @@ data = {
         {
             "id": 5,
             "nombre": "Lic. Carolina Meza",
-            "imagenId": "1z1ZFQQYN4n0fV-4PVi3i-Tv71_dYI_qP",
+            "imagenId": "1u5llF5gF8Gb1dvi1uWWtEaYr8cirYHWY",
             "materias": [
                 "Metodología de la Investigación"
             ],
